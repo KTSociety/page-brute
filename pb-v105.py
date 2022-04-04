@@ -68,10 +68,8 @@ def brutes(username, username_selector, password_selector, login_btn_selector, p
     f = open(pass_list, 'r')
     driver = webdriver.Chrome()
     optionss = webdriver.ChromeOptions()
-    '''
-    optionss.add_argument('--disable-gpu')
-    optionss.add_argument('--headless')
-    '''
+    #optionss.add_argument('--disable-gpu')
+    #optionss.add_argument('--headless')
     optionss.add_argument('--disable-popup-blocking')
     optionss.add_argument('--disable-extensions')
     optionss.add_argument('--no-sandbox')
@@ -90,7 +88,7 @@ def brutes(username, username_selector, password_selector, login_btn_selector, p
                 print ('------------------------')
                 print ('Tried password: ' + line + 'for user: ' + username)
                 print ('------------------------ \n')
-                t.sleep(5)
+                t.sleep(2)
         except KeyboardInterrupt:
             print(' CTRL+C - Operation aborted by user')
             exit()
