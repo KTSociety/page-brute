@@ -20,11 +20,11 @@ The chromedriver for Linux and Windows are already included, but if you need an 
 ## How to use the script with interactive wizard
 1). Start the script in terminal with: python3 pb-v105.py<br>
 2). Enter the target website login page url like: https://yourtargetpage.com/login<br>
-3). In your Chrome-Browser inspect the username element to find the CSS-Selector of the username form and enter it in your terminal as asked<br>
-4). Do the same for the CSS-Selector of the password field<br>
+3). In your Chrome browser inspect the username element to find the CSS-Selector of the Username-Field and copy it in your terminal<br>
+4). Do the same for the CSS-Selector of the Password-Field<br>
 5). And again for the CSS-Selector of the Login-Button<br>
-6). When Asked put in the targets username you wanna brute-force<br>
-7). Enter the PATH/NAME of your passwordlist .txt<br>
+6). When asked put in the targets username you want to brute-force<br>
+7). Enter the PATH/NAME of your passwords.txt<br>
 8). Watch the magic happen<br>
 
 ## Terminal Start-Code example
