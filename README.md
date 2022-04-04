@@ -23,7 +23,7 @@ The chromedriver for Linux and Windows are already included, but if you need an 
 python3 pb-v105.py
 ```
 2). Enter the target website login page url like: https://targetpage.com/login<br>
-3). In your Chrome browser inspect the username element to find the CSS-Selector of the Username-Field & copy it into terminal<br>
+3). In your Chrome browser inspect the username element to find the CSS-Selector and copy&paste it into terminal<br>
 4). Do the same for the CSS-Selector of the Password-Field<br>
 5). And again for the CSS-Selector of the Login-Button<br>
 6). When asked put in the targets username you want to brute-force<br>
