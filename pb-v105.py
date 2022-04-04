@@ -92,14 +92,14 @@ def brutes(username, username_selector, password_selector, login_btn_selector, p
                 print ('------------------------ \n')
                 t.sleep(1)
         except KeyboardInterrupt:
-            print('CTRL+C - Operation aborted')
+            print(' CTRL+C - Operation aborted by user')
             exit()
         except selenium.common.exceptions.NoSuchElementException:
-            print ('AN ELEMENT HAS BEEN REMOVED FROM THE TARGETPAGE \nMAYBE THE PASSWORD WAS FOUND! \n OR MAYBE YOU WERE BLOCKED \n')
+            print ('AN ELEMENT HAS BEEN REMOVED FROM THE TARGETPAGE \nMAYBE THE PASSWORD WAS FOUND! \nOR MAYBE YOU WERE BLOCKED \n')
             print ('Potencial Password has been found: {0}' .format(line))
             exit()
         except selenium.common.exceptions.TimeoutException:
-            print ('THERE IS A TIMEOUT ON TARGETPAGE, \nMAYBE THE PASSWORD WAS FOUND! \n OR MAYBE YOU WERE BLOCKED \n')
+            print ('THERE IS A TIMEOUT ON TARGETPAGE, \nMAYBE THE PASSWORD WAS FOUND! \nOR MAYBE YOU WERE BLOCKED \n')
             print ('Potencial Password has been found: {0}' .format(line))
             exit()
 
