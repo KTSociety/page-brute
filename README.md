@@ -2,13 +2,13 @@
 ```
 git clone https://github.com/ktsociety/page-brute/
 ```
-<br>
+
 ## Requirements
 ```
 pip3 install selenium
 pip3 install requests
 ```
-<br>
+
 ## How to use (text)
 1). Find a website with a login page<br>
 2). Inspect element to find the Selector of the username form<br>
