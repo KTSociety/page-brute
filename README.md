@@ -17,7 +17,7 @@ pip3 install requests
 ```
 The chromedriver for Linux and Windows are already included, but if you need an other version of chromedriver you can download it at https://chromedriver.chromium.org/downloads<br> 
 
-## How to use the script with interactive wizzard
+## How to use the script with interactive wizard
 1). Start the script in terminal with: python3 pb-v105.py<br>
 2). Enter the target website login page url like: https://yourtargetpage.com/login<br>
 3). In your Chrome-Browser inspect the username element to find the CSS-Selector of the username form and enter it in your terminal as asked<br>
