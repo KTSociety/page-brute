@@ -1,3 +1,16 @@
+######                             ######                             
+#     #   ##    ####  ######       #     # #####  #    # ##### ###### 
+#     #  #  #  #    # #            #     # #    # #    #   #   #      
+######  #    # #      #####  ##### ######  #    # #    #   #   #####  
+#       ###### #  ### #            #     # #####  #    #   #   #      
+#       #    # #    # #            #     # #   #  #    #   #   #      
+#       #    #  ####  ######       ######  #    #  ####    #   ###### 
+
+ [x]-> v1.0.5
+ [x]-> coded by KTSociety
+ [x]-> brute-force-tool for Python 3
+ [x]-> code based on the "Hatch" script from METACHAR
+
 ## Installation Instructions
 ```
 git clone https://github.com/ktsociety/page-brute/
