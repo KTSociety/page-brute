@@ -1,9 +1,9 @@
 PAGE-BRUTE is a python3 brute force tool that is used to brute force most websites
 
- [x]-> v1.0.5
- [x]-> coded by KTSociety
- [x]-> brute-force-tool for Python 3
- [x]-> code based on the "Hatch" script from METACHAR
+ [x]-> v1.0.5</br>
+ [x]-> coded by KTSociety</br>
+ [x]-> brute-force-tool for Python 3</br>
+ [x]-> code based on the "Hatch" script from METACHAR</br>
  
 ## Installation Instructions
 ```
