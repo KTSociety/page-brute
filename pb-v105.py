@@ -17,11 +17,9 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support import expected_conditions as EC
 
-
 #Config
 parser = OptionParser()
 now = datetime.datetime.now()
-
 
 #Args
 parser.add_option("-u", "--username", dest="username",help="Choose the username")
@@ -31,7 +29,6 @@ parser.add_option("--loginsel", dest="loginsel",help= "Choose the login button s
 parser.add_option("--passlist", dest="passlist",help="Enter the password list directory")
 parser.add_option("--website", dest="website",help="choose a website")
 (options, args) = parser.parse_args()
-
 
 def wizard():
     print (banner)
@@ -52,7 +49,6 @@ def wizard():
         t.sleep(1)
         print ('[!]' + ' Website could not be located make sure to use http / https')
         exit()
-
 
     username_selector = input('[~]' + ' Enter the username selector: ')
     password_selector = input('[~]' + ' Enter the password selector: ')
@@ -98,7 +94,6 @@ def brutes(username, username_selector, password_selector, login_btn_selector, p
             print ('Potencial Password has been found: {0}' .format(line))
             exit()
 
-
 banner = '''
 ######                             ######                             
 #     #   ##    ####  ######       #     # #####  #    # ##### ###### 
@@ -114,7 +109,6 @@ banner = '''
  [x]-> code based on the "Hatch" script from METACHAR
 '''.format()
 
-
 if options.username == None:
     if options.usernamesel == None:
         if options.passsel == None:
@@ -122,7 +116,6 @@ if options.username == None:
                 if options.passlist == None:
                     if options.website == None:
                         wizard()
-
 
 username = options.username
 username_selector = options.usernamesel
