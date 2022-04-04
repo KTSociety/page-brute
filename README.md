@@ -15,6 +15,7 @@ git clone https://github.com/KTSociety/page-brute
 pip3 install selenium
 pip3 install requests
 ```
+The chromedriver for Linux and Windows are already included, but if you need an other version of chromedriver you can download it at https://chromedriver.chromium.org/downloads<br> 
 
 ## How to use the script with interactive wizzard
 1). Start the script in terminal with: python3 pb-v105.py<br>
