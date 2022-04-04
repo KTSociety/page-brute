@@ -30,7 +30,7 @@ python3 pb-v105.py
 7). Enter the PATH/NAME of your passwords.txt<br>
 8). Watch the magic happen<br>
 
-## Terminal Start-Code example
+## Terminal Start-Code to use the script without wizard
 ```
 python3 pb-v105.py --username 'FILL-IN-TARGET-USERNAME-HERE' --usernamesel 'USER-CSS-SELECTOR-HERE' --passsel 'PASS-CSS-SELECTOR-HERE' --loginsel 'LOGIN-BUTTON-CSS-SELECTOR-HERE' --passlist 'YOUR-PASSLIST-TXT-HERE' --website 'TARGET-PAGE-URL-HERE'
 ```
