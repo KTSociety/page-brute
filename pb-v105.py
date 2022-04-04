@@ -46,9 +46,6 @@ def wizard():
             sys.stdout.flush()
     except selenium.common.exceptions.NoSuchElementException:
         pass
-    except KeyboardInterrupt:
-        print ('[!]' + ' User used Ctrl-c to exit')
-        exit()
     except:
         t.sleep(1)
         print ('[X]')
@@ -90,7 +87,7 @@ def brutes(username, username_selector, password_selector, login_btn_selector, p
                 print ('------------------------ \n')
                 t.sleep(2)
         except KeyboardInterrupt:
-            print(' CTRL+C - Operation aborted by user')
+            print('[!]' + ' CTRL+C - Operation aborted by user')
             exit()
         except selenium.common.exceptions.NoSuchElementException:
             print ('AN ELEMENT HAS BEEN REMOVED FROM THE TARGETPAGE \nMAYBE THE PASSWORD WAS FOUND! \nOR MAYBE YOU WERE BLOCKED... \n')
